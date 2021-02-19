@@ -1,16 +1,18 @@
-Порт 8085
+РџРѕСЂС‚ 8085
 
-Добавьте значения переменных или опишите их вручную для ${DB_URL}, ${DB_USERNAME} и ${DB_PASSWORD} в application.yml <br>
+Р”РѕР±Р°РІСЊС‚Рµ Р·РЅР°С‡РµРЅРёСЏ РїРµСЂРµРјРµРЅРЅС‹С… РёР»Рё РѕРїРёС€РёС‚Рµ РёС… РІСЂСѓС‡РЅСѓСЋ РґР»СЏ ${DB_URL}, ${DB_USERNAME} Рё ${DB_PASSWORD} РІ application.yml <br>
 
-API:
-GET localhost:8085/quizzes	для получения списка всех опросов
-Параметры в url: title, startDate, endDate, actiity опционально, orderBy обязателен, пагинация через pageSize и pageNum опционально<br>
+API:<br>
+GET localhost:8085/quizzes	РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ СЃРїРёСЃРєР° РІСЃРµС… РѕРїСЂРѕСЃРѕРІ<br>
+РџР°СЂР°РјРµС‚СЂС‹ РІ url: title, startDate, endDate, actiity РѕРїС†РёРѕРЅР°Р»СЊРЅРѕ, orderBy РѕР±СЏР·Р°С‚РµР»РµРЅ, РїР°РіРёРЅР°С†РёСЏ С‡РµСЂРµР· pageSize Рё pageNum РѕРїС†РёРѕРЅР°Р»СЊРЅРѕ<br>
 
-POST localhost:8085/quizzes	для добавления опроса
+POST localhost:8085/quizzes	РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ РѕРїСЂРѕСЃР°
 
-PUT localhost:8085/quizzes	для обновления опроса
+PUT localhost:8085/quizzes	РґР»СЏ РѕР±РЅРѕРІР»РµРЅРёСЏ РѕРїСЂРѕСЃР°
 
-DELETE localhost:8085/quizzes/{id} для удаления опроса
+DELETE localhost:8085/quizzes/{id} РґР»СЏ СѓРґР°Р»РµРЅРёСЏ РѕРїСЂРѕСЃР°
 
 
-Запуск в папке проекта: mvn spring-boot:run
+Р—Р°РїСѓСЃРє РІ РїР°РїРєРµ РїСЂРѕРµРєС‚Р°: mvn spring-boot:run
+
+Swagger РґРѕСЃС‚СѓРїРµ РїРѕ: localhost:8085/swagger-ui.html
