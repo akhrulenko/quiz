@@ -15,4 +15,4 @@ DELETE localhost:8085/quizzes/{id} для удаления опроса
 
 Запуск в папке проекта: mvn spring-boot:run
 
-Swagger доступе по: localhost:8085/swagger-ui.html
+Swagger доступе по: http://localhost:8085/swagger-ui.html
