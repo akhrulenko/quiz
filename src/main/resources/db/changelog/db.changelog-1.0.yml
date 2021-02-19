@@ -1,0 +1,50 @@
+databaseChangeLog:
+-  changeSet:
+      id: 1
+      author: Alex Khrulenko
+      changes:
+      -  createTable:
+            columns:
+            -  column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                     primaryKey: true
+                     nullable: false
+            -  column:
+                  name: title
+                  type: varchar(255)
+            -  column:
+                  name: start_date
+                  type: timestamp
+            -  column:
+                  name: end_date
+                  type: timestamp
+            -  column:
+                  name: activity
+                  type: boolean
+            tableName: quizzes
+      -  createTable:
+            columns:
+            -  column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                     primaryKey: true
+                     nullable: false
+            -  column:
+                  name: text
+                  type: varchar(255)
+            -  column:
+                  name: display_order
+                  type: int
+            -  column:
+                  name: quiz_id
+                  type: int
+                  constraints:
+                     nullable: false
+                     foreignKeyName: fk_questions_quiz
+                     references: quizzes(id)
+            tableName: questions
